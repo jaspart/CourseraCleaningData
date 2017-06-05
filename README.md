@@ -7,7 +7,18 @@ The script will create 2 files:
 * first_tidy.txt : The mean and standard deviation tidy data set of each observation.
 * second_tidy.txt : The average of the mean and standard deviation for each tuples (activity , subject).
 
-### Introduction
+### Variables
+The input variables are:
+* measurements : the Samsung sensor measurements
+* observations : the type of observations (training or testing)
+* features : the feature names (sensor/axis/data type/...)
+* activities : the activity names (laying, sitting, walking, ...)
+
+The output files are:
+* first_tidy.txt : the measurement tidy data (with labelled non numerical variables and measurement numerical variables).
+* second_tidy.txt : the average of the numerical variables grouped by subjects and activities.
+
+### Description
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
